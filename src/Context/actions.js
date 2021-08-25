@@ -1,4 +1,4 @@
-const ROOT_URL = 'https://secret-hamlet-03431.herokuapp.com';
+const ROOT_URL = 'https://whispering-crag-97489.herokuapp.com';
  
 export async function loginUser(dispatch, loginPayload) {
 	const requestOptions = {
@@ -9,7 +9,7 @@ export async function loginUser(dispatch, loginPayload) {
  
 	try {
 		dispatch({ type: 'REQUEST_LOGIN' });
-		let response = await fetch(`${ROOT_URL}/login`, requestOptions);
+		let response = await fetch(`${ROOT_URL}/api/auth/login`, requestOptions);
 		let data = await response.json();
  
 		if (data.user) {

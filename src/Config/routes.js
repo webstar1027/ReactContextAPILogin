@@ -1,26 +1,24 @@
-// Define routes of test project
-
-import React from "react";
+import React from 'react';
 import Login from '../Pages/Login';
 import Dashboard from '../Pages/Dashboard';
-import PageNotFound from '../Pages/NotFound';
+import NotFound from '../Pages/NotFound';
 
-const routes =[
+const routes = [
 	{
-		path:'/',
+		path: '/login',
 		component: Login,
 		isAuthenticated: false,
 	},
 	{
-		path:'/dashboard',
+		path: '/dashboard',
 		component: Dashboard,
 		isAuthenticated: true,
 	},
 	{
-		path:'/*',
-		component: PageNotFound,
+		path: '/*',
+		component: NotFound,
 		isAuthenticated: true,
 	},
 ];
- 
+
 export default routes;

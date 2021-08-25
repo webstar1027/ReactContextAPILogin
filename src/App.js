@@ -1,12 +1,11 @@
 import React from 'react';
 import {
 	BrowserRouter as Router,
-	Redirect,
 	Route,
-	Switch,
+	Switch
 } from 'react-router-dom';
 import routes from './Config/routes.js';
-import { AuthProvider } from "./Context";
+import { AuthProvider } from './Context';
 import AppRoute from './Components/AppRoutes';
 
 function App() {
@@ -27,5 +26,5 @@ function App() {
 		</AuthProvider>
 	);
 }
- 
+
 export default App;
